@@ -1,0 +1,243 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    background-color: darkcyan;
+    color: #333; 
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .name-role {
+    margin-right: 20px;
+  }
+  
+  .name-role h1 {
+    margin-bottom: 10px;
+  }
+  
+  .name-role p {
+    margin-bottom: 5px;
+  }
+  
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    margin-left: auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: aquamarine;
+  }
+  
+  /* Section styles */
+  .section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-content,
+  .skills-content {
+    padding: 20px;
+  }
+  
+  .skills-content {
+    background-color: #f0f0f0; 
+  }
+  
+  .education-content ul,
+  .skills-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-content ul li,
+  .skills-content ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Project styles */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+  
+  .project-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.15);
+  }
+  
+  .project-link {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    color: #00ced1;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff4d4d;
+  }
+  
+  /* Animation styles */
+  .animated {
+    animation-duration: 1s;
+  }
+  
+  .fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  
+  .fadeInRight {
+    animation-name: fadeInRight;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .project-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .project-card {
+      width: calc(100% - 40px);
+    }
+  }
+  
